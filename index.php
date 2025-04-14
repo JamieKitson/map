@@ -1,140 +1,35 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml">
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <style type="text/css">
-    img {border: 0}
-    v\:* {
-          behavior:url(#default#VML);
-	 }
-    </style>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
     <title>Jamie's Travels</title>
-    <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAA1MA-jz-rV58wc52_XWph8RRVZSQXK8c7siG3Tgmx_yYyaDVobxQgduSZhkJ8G1wv8yi2VorVkZonTQ"
-            type="text/javascript"></script>
-    <script type="text/javascript">
-    //<![CDATA[
+    <style>
+        body {
+            margin: 0;
+        }
 
-function getWindowWidth() {
-	if (window.self && self.innerWidth) 
-		{return self.innerWidth;}
-	if (document.documentElement && document.documentElement.clientWidth) 
-		{return document.documentElement.clientWidth;}
-	return 0;
-}
+        #map {
+            width: 100%;
+            min-height: 100vh;
+        }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3FIG6Hrevw5fiybeRDTAQRaEc8SQb8aA" defer></script>
+    <script>
+        // Initialize the map
+        function initMap() {
+            const map = new google.maps.Map(document.getElementById("map"), {
+                center: { lat: 60.0648, lng: 11.8652 },
+                zoom: 4,
+                mapTypeId: "hybrid",
+            });
 
-function getWindowHeight() {
-	if (window.self && self.innerHeight) 
-		{return self.innerHeight;}
-	if (document.documentElement && document.documentElement.clientHeight) 
-		{return document.documentElement.clientHeight;}
-	return 0;
-}
-
-function resizeApp() {
-	var offsetTop = 0;
-	var mapElem = document.getElementById("map");
-	for (var elem = mapElem; elem != null; elem = elem.offsetParent) {
-		offsetTop += elem.offsetTop;
-	}
-	var height = getWindowHeight() - offsetTop - 10;
-	if (height >= 0) {
-		mapElem.style.height = height + "px";
-//		e("panel").style.height = (height + 4) + "px";
-	
-	}
-	var width = getWindowWidth() - offsetTop - 10;
-	if (width >= 0) {
-		mapElem.style.width = width + "px";
-	}
-
-
-}
-
-
-
-function createMarker(point, place, link, pic) {
-  var marker = new GMarker(point);
-
-if (pic != "undefined") {
-var infoTabs = [
-  new GInfoWindowTab("Desc", "<a href=\"http://blog.kitten-x.com/search/label/" + place.toLowerCase() + "\">" + place + "<\/a>"),
-  new GInfoWindowTab("Pic", "<center><a href=\"http://www.flickr.com/photos/jamiekitson/tags/" + place + "/\"><img src=\"" + pic + "\"></a></center>")
-]; } else {
-var infoTabs = [
-  new GInfoWindowTab("Desc", "<a href=\"http://blog.kitten-x.com/search/label/" + place.toLowerCase() + "\">" + place + "<\/a><br><a href=\"http://www.flickr.com/photos/jamiekitson/tags/" + place + "/\">Pics</a></center>")
-];
-}
-
-/*
-if (pic != "undefined") {
-
-var infoTabs = [
-  new GInfoWindowTab("Desc", "<a href=\"" + link + "\">" + place + "<\/a>"),
-  new GInfoWindowTab("Pic", "<center><a href=\"" + link + "\"><img src=\"" + pic + "\"></a></center>")
-];
-
-} else if (link != "undefined") {
-var infoTabs = [
-  new GInfoWindowTab("Desc", "<a href=\"" + link + "\">" + place + "<\/a>")
-];
-
-} else { 
-var infoTabs = [
-  new GInfoWindowTab("Desc", place)
-];
-} 
-*/
-
-  GEvent.addListener(marker, "click", function() {
-    marker.openInfoWindowTabsHtml(infoTabs);
-  }); 
-
-  return marker;
-}
-
-function getArray(ain) {
-	var aout = [];
-	for (i = 0; i < ain.length; i++)
-		aout.push(ain[i].point);
-	return aout;
-}
-
-function pointerClass() {}
-
-function createPointer(lat, lng, place, link, pic) {
-	var apoint = new pointerClass;
-	apoint.point = new GLatLng(lat, lng);
-	apoint.lat = lat;
-	apoint.lng = lng;
-	apoint.link = link;
-	apoint.place = place;
-	apoint.pic = pic;
-	return apoint;
-}
-
-    function load() {
-
-	resizeApp();
-
-      if (GBrowserIsCompatible()) {
-        
-	var map = new GMap2(document.getElementById("map"));
-	
-	map.addControl(new GLargeMapControl());
-        map.addControl(new GMapTypeControl());
-        map.setCenter(new GLatLng(60.06484046010452, 11.865234375), 4);
-	map.setMapType( G_HYBRID_MAP );
-	
-	var points = [];
-	var glatlongs = [];
-	var links = [];
-	var place = [];
-	var info = [];
-	var i = 0;
+            // Define the points
+            const points = [
 	
 <?php
 
+	$fields = ["lat", "lng", "place", "link", "pic"];
 	$data = file_get_contents("data.csv");
 	$lines = preg_split("/\n/", $data);
 	foreach($lines as $line) {
@@ -144,52 +39,68 @@ function createPointer(lat, lng, place, link, pic) {
 			$newline = "";
 			for ($i = 0; $i < 5; $i++) {
 				if ($i < count($facts)) {
-					$newline = "$newline,$facts[$i]";
+					$newline = "$newline, $fields[$i]: $facts[$i]";
 				} else {
-					$newline = "$newline,'undefined'";
+					$newline = "$newline, $fields[$i]: undefined";
 				}
 			}
 			$newline = substr($newline, 1);
-//			$newline = $newline."jamie";
-			echo "  points.push(createPointer($newline));\n";
-//			echo "	points.push(createPointer($line));\n";
+			echo "  {$newline }\n";
 		}
 	}
 
 ?>
-	for (i = 0; i < points.length; i++) {
-	  	map.addOverlay(new GMarker(points[i].point));
-		map.addOverlay(createMarker(points[i].point, points[i].place, points[i].link, points[i].pic));
-//		glatlongs.push(new GLatLng(points[i].lat, points[i].lng));
-	}
 
-//	map.addOverlay(new GPolyline(glatlongs));
-	map.addOverlay(new GPolyline(getArray(points)));
-        
-	map.setCenter(new GLatLng(points[i - 1].lat, points[i - 1].lng), 5);
+            ];
 
+            // Add markers to the map
+            points.forEach((point) => {
+                const marker = new google.maps.Marker({
+                    position: { lat: point.lat, lng: point.lng },
+                    map: map,
+                    title: point.place,
+                });
 
-/*        GEvent.addListener(map, "moveend", function() {
-          var center = map.getCenter();
-          document.getElementById("message").innerHTML = center.toString();
-        });
-*/
-	GEvent.addListener(map, "dblclick", function(marker, point) {
-        	map.setCenter(point);
-	});
+                // Add an info window with links and images
+                const infoWindowContent = `
+    <div>
+      <h3>${point.place}</h3>
+      ${point.pic != undefined
+                        ? `<a href="http://blog.kitten-x.com/search/label/${point.place.toLowerCase()}">${point.place}</a>
+                            <center><a href="http://www.flickr.com/photos/jamiekitson/tags/${point.place}/"><img src="${point.pic}"></a></center>`
+                        : `<a href="http://blog.kitten-x.com/search/label/${point.place.toLowerCase()}">${point.place}</a><br><a href="http://www.flickr.com/photos/jamiekitson/tags/${point.place}/">Pics</a></center>`
+                    }
+    </div>
+  `;
 
+                const infoWindow = new google.maps.InfoWindow({
+                    content: infoWindowContent,
+                });
 
+                marker.addListener("click", () => {
+                    infoWindow.open(map, marker);
+                });
+            });
 
-      }
-        
-    }
+            // Draw a polyline connecting the points
+            const polyline = new google.maps.Polyline({
+                path: points.map((point) => ({ lat: point.lat, lng: point.lng })),
+                geodesic: true,
+                strokeColor: "#FF0000",
+                strokeOpacity: 1.0,
+                strokeWeight: 2,
+            });
 
-    //]]>
+            polyline.setMap(map);
+        }
+
+        // Load the map when the page loads
+        window.onload = initMap;
     </script>
-  </head>
+</head>
 
-  <body onload="load()" onunload="GUnload()">
-    <div id="map" style="width: 700px; height: 500px"></div>
-    <div id="message"></div>
-  </body>
+<body>
+    <div id="map"></div>
+</body>
+
 </html>
