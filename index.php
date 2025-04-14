@@ -45,7 +45,7 @@
 				}
 			}
 			$newline = substr($newline, 1);
-			echo "  {$newline }\n";
+			echo "  {{$newline }}\n";
 		}
 	}
 
