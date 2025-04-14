@@ -66,9 +66,9 @@
     <div>
       <h3>${point.place}</h3>
       ${point.pic != undefined
-                        ? `<a href="http://blog.kitten-x.com/search/label/${point.place.toLowerCase()}">${point.place}</a>
-                            <center><a href="http://www.flickr.com/photos/jamiekitson/tags/${point.place}/"><img src="${point.pic}"></a></center>`
-                        : `<a href="http://blog.kitten-x.com/search/label/${point.place.toLowerCase()}">${point.place}</a><br><a href="http://www.flickr.com/photos/jamiekitson/tags/${point.place}/">Pics</a></center>`
+                        ? `<a href="https://blog.kitten-x.com/search/label/${point.place.toLowerCase()}">${point.place}</a>
+                            <center><a href="https://www.flickr.com/photos/jamiekitson/tags/${point.place}/"><img src="${point.pic}"></a></center>`
+                        : `<a href="https://blog.kitten-x.com/search/label/${point.place.toLowerCase()}">${point.place}</a><br><a href="https://www.flickr.com/photos/jamiekitson/tags/${point.place}/">Pics</a></center>`
                     }
     </div>
   `;
