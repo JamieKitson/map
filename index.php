@@ -136,7 +136,7 @@ function createPointer(lat, lng, place, link, pic) {
 <?php
 
 	$data = file_get_contents("data.csv");
-	$lines = split("\n", $data);
+	$lines = preg_split("/\n/", $data);
 	foreach($lines as $line) {
 		if (trim($line) != "")
 		{
