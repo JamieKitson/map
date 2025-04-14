@@ -14,7 +14,7 @@
             min-height: 100vh;
         }
     </style>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3FIG6Hrevw5fiybeRDTAQRaEc8SQb8aA&loading=async&callback=initMap" defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3FIG6Hrevw5fiybeRDTAQRaEc8SQb8aA&loading=async&callback=initMap&libraries=marker" defer></script>
     <script>
         // Initialize the map
         function initMap() {
@@ -22,6 +22,7 @@
                 center: { lat: 60.0648, lng: 11.8652 },
                 zoom: 4,
                 mapTypeId: "hybrid",
+                mapId: 'YOUR_MAP_ID',
             });
 
             // Define the points
@@ -55,7 +56,7 @@
 
             // Add markers to the map
             points.forEach((point) => {
-                const marker = new google.maps.Marker({
+                const marker = new google.maps.AdvancedMarkerElement({
                     position: { lat: point.lat, lng: point.lng },
                     map: map,
                     title: point.place,
@@ -77,7 +78,7 @@
                     content: infoWindowContent,
                 });
 
-                marker.addListener("click", () => {
+                marker.addListener("gmp-click", () => {
                     infoWindow.open(map, marker);
                 });
             });
