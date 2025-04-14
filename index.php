@@ -56,7 +56,7 @@
 
             // Add markers to the map
             points.forEach((point) => {
-                const marker = new google.maps.AdvancedMarkerElement({
+                const marker = new google.maps.marker.AdvancedMarkerElement({
                     position: { lat: point.lat, lng: point.lng },
                     map: map,
                     title: point.place,
