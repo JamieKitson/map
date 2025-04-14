@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>Google Maps JavaScript API Example</title>
+    <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAA1MA-jz-rV58wc52_XWph8RRVZSQXK8c7siG3Tgmx_yYyaDVobxQgduSZhkJ8G1wv8yi2VorVkZonTQ"
+            type="text/javascript"></script>
+    <script type="text/javascript">
+    //<![CDATA[
+
+function getWindowWidth() {
+	if (window.self && self.innerWidth) 
+		{return self.innerWidth;}
+	if (document.documentElement && document.documentElement.clientWidth) 
+		{return document.documentElement.clientWidth;}
+	return 0;
+}
+
+function getWindowHeight() {
+	if (window.self && self.innerHeight) 
+		{return self.innerHeight;}
+	if (document.documentElement && document.documentElement.clientHeight) 
+		{return document.documentElement.clientHeight;}
+	return 0;
+}
+
+function resizeApp() {
+	var offsetTop = 0;
+	var mapElem = document.getElementById("map");
+	for (var elem = mapElem; elem != null; elem = elem.offsetParent) {
+		offsetTop += elem.offsetTop;
+	}
+	var height = getWindowHeight() - offsetTop - 10;
+	if (height >= 0) {
+		mapElem.style.height = height + "px";
+//		e("panel").style.height = (height + 4) + "px";
+	
+	}
+	var width = getWindowWidth() - offsetTop - 10;
+	if (width >= 0) {
+		mapElem.style.width = width + "px";
+	}
+
+
+}
+
+
+
+function createMarker(point, place, link, pic) {
+  var marker = new GMarker(point);
+
+if (pic > '') {
+
+var infoTabs = [
+  new GInfoWindowTab("Desc", "<a href=\"" + link + "\">" + place + "<\/a>"),
+  new GInfoWindowTab("Pic", "<center><img src=\"" + pic + "\"></center>")
+];
+
+} else {
+var infoTabs = [
+  new GInfoWindowTab("Desc", "<a href=\"" + link + "\">" + place + "<\/a>"),
+];
+
+}
+
+  GEvent.addListener(marker, "click", function() {
+    marker.openInfoWindowTabsHtml(infoTabs);
+  }); 
+
+  return marker;
+}
+
+function getArray(ain) {
+	var aout = [];
+	for (i = 0; i < ain.length; i++)
+		aout.push(ain[i].point);
+	return aout;
+}
+
+function pointerClass() {}
+
+function createPointer(lat, lng, place, link, pic) {
+	var apoint = new pointerClass;
+	apoint.point = new GLatLng(lat, lng);
+	apoint.lat = lat;
+	apoint.lng = lng;
+	apoint.link = link;
+	apoint.place = place;
+	apoint.pic = pic;
+	return apoint;
+}
+
+    function load() {
+      if (GBrowserIsCompatible()) {
+        
+	var map = new GMap2(document.getElementById("map"));
+	
+	resizeApp();
+        
+	map.addControl(new GLargeMapControl());
+        map.addControl(new GMapTypeControl());
+        map.setCenter(new GLatLng(60.06484046010452, 11.865234375), 4);
+	
+	var points = [];
+	var glatlongs = [];
+	var links = [];
+	var place = [];
+	var info = [];
+	var i = 0;
+	
+	points.push(createPointer(50.83391450400326, -0.2789497375488281, 'Shoreham-By-Sea', 'http://www.kitten-x.com/pics/europe/one.htm', 'http://www.kitten-x.com/pics/europe/thumbs/DCP_2220%20copy.gif'));
+	points.push(createPointer(51.496413985475904, -0.14389514923095703, 'London Victoria', 'http://www.kitten-x.com/pics/europe/one.htm'));
+	points.push(createPointer(50.844538088124565, 4.352817535400391, 'Brussels', 'http://www.kitten-x.com/pics/europe/one.htm', 'http://www.kitten-x.com/pics/europe/thumbs/DCP_2237%20copy.gif'));
+	points.push(createPointer(52.07781801208549, 5.151214599609375, 'Utrecht', 'http://www.kitten-x.com/pics/europe/one.htm'));
+	points.push(createPointer(52.02308197378604, 8.529424667358398, 'Bielefeld', 'http://www.kitten-x.com/pics/europe/one.htm'));
+	points.push(createPointer(52.410901400392746, 16.914138793945312, 'Poznan', 'http://www.kitten-x.com/pics/europe/two.htm'));
+	points.push(createPointer(51.10891106778306, 17.03327178955078, 'Wraclaw', 'http://www.kitten-x.com/pics/europe/two.htm'));
+	points.push(createPointer(54.194332289895335, 16.1704158782959, 'Koszalin', 'http://www.kitten-x.com/pics/europe/two.htm'));
+	points.push(createPointer(54.38, 25.19, 'Vilnius', 'http://www.kitten-x.com/pics/europe/three.htm'));
+	points.push(createPointer(56.53, 24.08, 'Riga', 'http://www.kitten-x.com/pics/europe/three.htm'));
+	points.push(createPointer(59.22, 24.48, 'Tallinn'));
+	points.push(createPointer(60.16798768034548, 24.940509796142578, 'Helsinki', 'http://www.kitten-x.com/pics/europe/three.htm'));
+	points.push(createPointer(65.00990773592373, 25.472660064697266, 'Oulu', 'http://www.kitten-x.com/pics/europe/four.htm'));
+
+	for (i = 0; i < points.length; i++) {
+	  	map.addOverlay(new GMarker(points[i].point));
+		map.addOverlay(createMarker(points[i].point, points[i].place, points[i].link, points[i].pic));
+//		glatlongs.push(new GLatLng(points[i].lat, points[i].lng));
+	}
+
+//	map.addOverlay(new GPolyline(glatlongs));
+
+	map.addOverlay(new GPolyline(getArray(points)));
+
+
+        GEvent.addListener(map, "moveend", function() {
+          var center = map.getCenter();
+          document.getElementById("message").innerHTML = center.toString();
+        });
+
+	GEvent.addListener(map, "dblclick", function(marker, point) {
+        	map.setCenter(point);
+	});
+
+
+
+      }
+    }
+
+    //]]>
+    </script>
+  </head>
+
+  <body onload="load()" onunload="GUnload()">
+    <div id="map" style="width: 700px; height: 500px"></div>
+    <div id="message"></div>
+  </body>
+</html>
