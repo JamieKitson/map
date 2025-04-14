@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<name>Location history from 11/15/2009 to 11/15/2009</name>
+<open>1</open>
+<description>
+</description>
+<Placemark>
+<name>Nov 15, 2009 9:35:52 PM Greenwich Mean Time</name>
+<description>Trigon Rd, Lambeth, Greater London SW8 1, UK</description>
+<ExtendedData>
+<Data name="accuracy">
+<value>87</value>
+</Data>
+<Data name="timestamp">
+<value>1258320952763</value>
+</Data>
+</ExtendedData>
+<Point>
+<coordinates>-0.11574,51.480689,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Nov 15, 2009 8:55:37 PM Greenwich Mean Time</name>
+<description>Trigon Rd, Lambeth, Greater London SW8 1, UK</description>
+<ExtendedData>
+<Data name="accuracy">
+<value>150</value>
+</Data>
+<Data name="timestamp">
+<value>1258318537390</value>
+</Data>
+</ExtendedData>
+<Point>
+<coordinates>-0.115836,51.480576,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Nov 15, 2009 8:14:21 PM Greenwich Mean Time</name>
+<description>Thessaly Rd, Wandsworth, Greater London SW8 4, UK</description>
+<ExtendedData>
+<Data name="accuracy">
+<value>15</value>
+</Data>
+<Data name="timestamp">
+<value>1258316061901</value>
+</Data>
+</ExtendedData>
+<Point>
+<coordinates>-0.139422,51.478013,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Nov 15, 2009 8:06:59 PM Greenwich Mean Time</name>
+<description>Addiscombe Rd, Croydon, Greater London CR0 0, UK</description>
+<ExtendedData>
+<Data name="accuracy">
+<value>160</value>
+</Data>
+<Data name="timestamp">
+<value>1258315619242</value>
+</Data>
+</ExtendedData>
+<Point>
+<coordinates>-0.092565,51.375633,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Nov 15, 2009 7:48:36 PM Greenwich Mean Time</name>
+<description>Chatsworth Rd, Croydon, Greater London CR0 1, UK</description>
+<ExtendedData>
+<Data name="accuracy">
+<value>887</value>
+</Data>
+<Data name="timestamp">
+<value>1258314516018</value>
+</Data>
+</ExtendedData>
+<Point>
+<coordinates>-0.093884,51.367139,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Nov 15, 2009 7:37:29 PM Greenwich Mean Time</name>
+<description>The Dell, Horley, Surrey RH6 7, UK</description>
+<ExtendedData>
+<Data name="accuracy">
+<value>19</value>
+</Data>
+<Data name="timestamp">
+<value>1258313849761</value>
+</Data>
+</ExtendedData>
+<Point>
+<coordinates>-0.16078,51.1784,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Nov 15, 2009 7:27:36 PM Greenwich Mean Time</name>
+<description>Williams Way, Crawley, West Sussex RH10 1, UK</description>
+<ExtendedData>
+<Data name="accuracy">
+<value>18</value>
+</Data>
+<Data name="timestamp">
+<value>1258313256656</value>
+</Data>
+</ExtendedData>
+<Point>
+<coordinates>-0.161794,51.117826,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Nov 15, 2009 7:07:25 PM Greenwich Mean Time</name>
+<description>Williams Way, Crawley, West Sussex RH10 1, UK</description>
+<ExtendedData>
+<Data name="accuracy">
+<value>15</value>
+</Data>
+<Data name="timestamp">
+<value>1258312045256</value>
+</Data>
+</ExtendedData>
+<Point>
+<coordinates>-0.161846,51.117872,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Nov 15, 2009 7:05:28 PM Greenwich Mean Time</name>
+<description>Williams Way, Crawley, West Sussex RH10 1, UK</description>
+<ExtendedData>
+<Data name="accuracy">
+<value>15</value>
+</Data>
+<Data name="timestamp">
+<value>1258311928544</value>
+</Data>
+</ExtendedData>
+<Point>
+<coordinates>-0.162039,51.118123,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Nov 15, 2009 6:59:32 PM Greenwich Mean Time</name>
+<description>West Sussex, UK</description>
+<ExtendedData>
+<Data name="accuracy">
+<value>15</value>
+</Data>
+<Data name="timestamp">
+<value>1258311572175</value>
+</Data>
+</ExtendedData>
+<Point>
+<coordinates>-0.193493,51.097835,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Nov 15, 2009 6:47:03 PM Greenwich Mean Time</name>
+<description>West Sussex, UK</description>
+<ExtendedData>
+<Data name="accuracy">
+<value>19</value>
+</Data>
+<Data name="timestamp">
+<value>1258310823259</value>
+</Data>
+</ExtendedData>
+<Point>
+<coordinates>-0.193536,51.09758,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Nov 15, 2009 6:45:06 PM Greenwich Mean Time</name>
+<description>Slaugham, West Sussex, UK</description>
+<ExtendedData>
+<Data name="accuracy">
+<value>21</value>
+</Data>
+<Data name="timestamp">
+<value>1258310706887</value>
+</Data>
+</ExtendedData>
+<Point>
+<coordinates>-0.199823,51.045205,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Nov 15, 2009 6:40:57 PM Greenwich Mean Time</name>
+<description>Mallion&#39;s Ln, Cuckfield Rural, West Sussex RH17 6, UK</description>
+<ExtendedData>
+<Data name="accuracy">
+<value>1886</value>
+</Data>
+<Data name="timestamp">
+<value>1258310457879</value>
+</Data>
+</ExtendedData>
+<Point>
+<coordinates>-0.190544,51.030946,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Nov 15, 2009 6:40:48 PM Greenwich Mean Time</name>
+<description>Market Pl, Haywards Heath, West Sussex RH16 1, UK</description>
+<ExtendedData>
+<Data name="accuracy">
+<value>131</value>
+</Data>
+<Data name="timestamp">
+<value>1258310448427</value>
+</Data>
+</ExtendedData>
+<Point>
+<coordinates>-0.104379,51.00607,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Nov 15, 2009 5:38:19 PM Greenwich Mean Time</name>
+<description>Upper St Johns Rd, Burgess Hill, West Sussex RH15 8, UK</description>
+<ExtendedData>
+<Data name="accuracy">
+<value>2304</value>
+</Data>
+<Data name="timestamp">
+<value>1258306699154</value>
+</Data>
+</ExtendedData>
+<Point>
+<coordinates>-0.133906,50.959764,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Nov 15, 2009 5:19:53 PM Greenwich Mean Time</name>
+<description>Upper St Johns Rd, Burgess Hill, West Sussex RH15 8, UK</description>
+<ExtendedData>
+<Data name="accuracy">
+<value>2304</value>
+</Data>
+<Data name="timestamp">
+<value>1258305593639</value>
+</Data>
+</ExtendedData>
+<Point>
+<coordinates>-0.133906,50.959764,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Nov 15, 2009 5:17:53 PM Greenwich Mean Time</name>
+<description>Oak Hall Park, Burgess Hill, West Sussex RH15 0, UK</description>
+<ExtendedData>
+<Data name="accuracy">
+<value>150</value>
+</Data>
+<Data name="timestamp">
+<value>1258305473028</value>
+</Data>
+</ExtendedData>
+<Point>
+<coordinates>-0.128372,50.950976,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Nov 15, 2009 5:16:15 PM Greenwich Mean Time</name>
+<description>Keymer Parade, Burgess Hill, West Sussex RH15 0, UK</description>
+<ExtendedData>
+<Data name="accuracy">
+<value>1324</value>
+</Data>
+<Data name="timestamp">
+<value>1258305375979</value>
+</Data>
+</ExtendedData>
+<Point>
+<coordinates>-0.126778,50.953089,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Nov 15, 2009 5:11:31 PM Greenwich Mean Time</name>
+<description>Woodsland Rd, Keymer, West Sussex BN6 8, UK</description>
+<ExtendedData>
+<Data name="accuracy">
+<value>1621</value>
+</Data>
+<Data name="timestamp">
+<value>1258305091546</value>
+</Data>
+</ExtendedData>
+<Point>
+<coordinates>-0.140857,50.92933,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Nov 15, 2009 5:11:22 PM Greenwich Mean Time</name>
+<description>Woodsland Rd, Keymer, West Sussex BN6 8, UK</description>
+<ExtendedData>
+<Data name="accuracy">
+<value>1621</value>
+</Data>
+<Data name="timestamp">
+<value>1258305082927</value>
+</Data>
+</ExtendedData>
+<Point>
+<coordinates>-0.140857,50.92933,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Nov 15, 2009 4:30:42 PM Greenwich Mean Time</name>
+<description>Railway St, Brighton, Brighton and Hove BN1 3, UK</description>
+<ExtendedData>
+<Data name="accuracy">
+<value>150</value>
+</Data>
+<Data name="timestamp">
+<value>1258302642885</value>
+</Data>
+</ExtendedData>
+<Point>
+<coordinates>-0.140944,50.829514,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Nov 15, 2009 1:40:31 PM Greenwich Mean Time</name>
+<description>Mouse Ln, Steyning, West Sussex BN44 3, UK</description>
+<ExtendedData>
+<Data name="accuracy">
+<value>75</value>
+</Data>
+<Data name="timestamp">
+<value>1258292431122</value>
+</Data>
+</ExtendedData>
+<Point>
+<coordinates>-0.340222,50.893585,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Nov 15, 2009 12:30:25 PM Greenwich Mean Time</name>
+<description>Mouse Ln, Steyning, West Sussex BN44 3, UK</description>
+<ExtendedData>
+<Data name="accuracy">
+<value>75</value>
+</Data>
+<Data name="timestamp">
+<value>1258288225203</value>
+</Data>
+</ExtendedData>
+<Point>
+<coordinates>-0.340222,50.893585,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Nov 15, 2009 11:30:22 AM Greenwich Mean Time</name>
+<description>Mouse Ln, Steyning, West Sussex BN44 3, UK</description>
+<ExtendedData>
+<Data name="accuracy">
+<value>75</value>
+</Data>
+<Data name="timestamp">
+<value>1258284622727</value>
+</Data>
+</ExtendedData>
+<Point>
+<coordinates>-0.340222,50.893585,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Nov 15, 2009 8:29:29 AM Greenwich Mean Time</name>
+<description>Mouse Ln, Steyning, West Sussex BN44 3, UK</description>
+<ExtendedData>
+<Data name="accuracy">
+<value>75</value>
+</Data>
+<Data name="timestamp">
+<value>1258273769293</value>
+</Data>
+</ExtendedData>
+<Point>
+<coordinates>-0.340222,50.893585,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Nov 15, 2009 5:48:04 AM Greenwich Mean Time</name>
+<description>Mouse Ln, Steyning, West Sussex BN44 3, UK</description>
+<ExtendedData>
+<Data name="accuracy">
+<value>75</value>
+</Data>
+<Data name="timestamp">
+<value>1258264084481</value>
+</Data>
+</ExtendedData>
+<Point>
+<coordinates>-0.340222,50.893585,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Nov 15, 2009 5:07:12 AM Greenwich Mean Time</name>
+<description>Mouse Ln, Steyning, West Sussex BN44 3, UK</description>
+<ExtendedData>
+<Data name="accuracy">
+<value>75</value>
+</Data>
+<Data name="timestamp">
+<value>1258261632130</value>
+</Data>
+</ExtendedData>
+<Point>
+<coordinates>-0.340222,50.893585,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Nov 15, 2009 4:26:55 AM Greenwich Mean Time</name>
+<description>Mouse Ln, Steyning, West Sussex BN44 3, UK</description>
+<ExtendedData>
+<Data name="accuracy">
+<value>75</value>
+</Data>
+<Data name="timestamp">
+<value>1258259215746</value>
+</Data>
+</ExtendedData>
+<Point>
+<coordinates>-0.340222,50.893585,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Nov 15, 2009 3:46:40 AM Greenwich Mean Time</name>
+<description>Mouse Ln, Steyning, West Sussex BN44 3, UK</description>
+<ExtendedData>
+<Data name="accuracy">
+<value>75</value>
+</Data>
+<Data name="timestamp">
+<value>1258256800659</value>
+</Data>
+</ExtendedData>
+<Point>
+<coordinates>-0.340222,50.893585,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Nov 15, 2009 3:06:25 AM Greenwich Mean Time</name>
+<description>Mouse Ln, Steyning, West Sussex BN44 3, UK</description>
+<ExtendedData>
+<Data name="accuracy">
+<value>75</value>
+</Data>
+<Data name="timestamp">
+<value>1258254385889</value>
+</Data>
+</ExtendedData>
+<Point>
+<coordinates>-0.340222,50.893585,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Nov 15, 2009 2:26:05 AM Greenwich Mean Time</name>
+<description>Mouse Ln, Steyning, West Sussex BN44 3, UK</description>
+<ExtendedData>
+<Data name="accuracy">
+<value>75</value>
+</Data>
+<Data name="timestamp">
+<value>1258251965802</value>
+</Data>
+</ExtendedData>
+<Point>
+<coordinates>-0.340222,50.893585,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Nov 15, 2009 1:45:51 AM Greenwich Mean Time</name>
+<description>Mouse Ln, Steyning, West Sussex BN44 3, UK</description>
+<ExtendedData>
+<Data name="accuracy">
+<value>75</value>
+</Data>
+<Data name="timestamp">
+<value>1258249551349</value>
+</Data>
+</ExtendedData>
+<Point>
+<coordinates>-0.340222,50.893585,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Nov 15, 2009 1:05:35 AM Greenwich Mean Time</name>
+<description>Mouse Ln, Steyning, West Sussex BN44 3, UK</description>
+<ExtendedData>
+<Data name="accuracy">
+<value>75</value>
+</Data>
+<Data name="timestamp">
+<value>1258247135495</value>
+</Data>
+</ExtendedData>
+<Point>
+<coordinates>-0.340222,50.893585,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Nov 15, 2009 12:25:21 AM Greenwich Mean Time</name>
+<description>Mouse Ln, Steyning, West Sussex BN44 3, UK</description>
+<ExtendedData>
+<Data name="accuracy">
+<value>75</value>
+</Data>
+<Data name="timestamp">
+<value>1258244721456</value>
+</Data>
+</ExtendedData>
+<Point>
+<coordinates>-0.340222,50.893585,0</coordinates>
+</Point>
+</Placemark>
+</Document>
+</kml>
