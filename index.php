@@ -60,6 +60,7 @@
                     position: { lat: point.lat, lng: point.lng },
                     map: map,
                     title: point.place,
+                    zIndex: Math.round(point.lat * -100000)
                 });
 
                 // Add an info window with links and images
