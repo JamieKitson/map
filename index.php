@@ -14,7 +14,7 @@
             min-height: 100vh;
         }
     </style>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3FIG6Hrevw5fiybeRDTAQRaEc8SQb8aA&loading=async&callback=initMap&libraries=marker" defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKdNH1dTxnyAv1fnMIY55V61dRffLpQ2E&loading=async&callback=initMap&libraries=marker" defer></script>
     <script>
         // Initialize the map
         function initMap() {
